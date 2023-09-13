@@ -32,6 +32,10 @@ const buttons = [
   },
 ];
 
-const buttonElements = null; // Replace null and add .map code here
+const buttonElements = buttons.map((button) => {
+  const buttonElement = document.createElement('button');
+  buttonElement.innerText = button.text;
+  return buttonElement;
+});
 
 console.log(buttonElements);
